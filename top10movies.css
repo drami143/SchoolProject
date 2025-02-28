@@ -143,7 +143,7 @@ nav li:first-child{
 }
 .movie-list-container {
     padding: 0 40px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .movie-list-wrapper {
@@ -153,7 +153,7 @@ nav li:first-child{
 
 .movie-list {
     margin-top:10vh;
-    margin-left: 5vh;
+    margin-left: 1vh;
     display: flex;
     align-items: center;
     height: 400px;
@@ -162,14 +162,14 @@ nav li:first-child{
 }
 
 .movie-list-item {
-    margin-right: 50px;
+    margin-right: 20px;
     position: relative;
     margin-bottom: 10vh;
 }
   
 .movie-list-item:hover .movie-list-item-img {
     transform: scale(1.2);
-    margin: 0 30px;
+    margin: 0 20px;
     opacity: .1;
 }
   
@@ -181,8 +181,8 @@ nav li:first-child{
   
 .movie-list-item-img {
     transition: all 1s ease-in-out;
-    width: 275px;
-    height: 400px;
+    width: 245px;
+    height: 360px;
     object-fit:cover;
     border-radius: 20px;
 }
