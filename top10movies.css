@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bs-font-sans-serif: 'New Tegomin';
+    --primary-color:rgb(252, 244, 229);
+    --secondary-color:rgb(153, 34, 34);
+}
+body {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+header{
+    padding: 10px;
+    border: var(--primary-color) .2px;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+    gap: 30px;
+}
+
+nav a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav a:hover{
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.title {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "mynerve";
+}
+
+.filmReel{
+    width: 7%;
+    height: 7%;
+    margin-bottom: 1%;
+  }
+
+.title-sidebar{
+    margin: 0;
+    margin-top: 7%;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 35px;
+    font-family: "mynerve";
+}
+
+.sidebar-search{
+    font-size: 22px;
+    margin-top: 15%;
+    font-family: 'New Tegomin';
+    text-decoration: none;
+    color: var(--primary-color);
+    align-items:end;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 300px;
+    z-index: 999;
+    background-color: var(--secondary-color);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+
+}
+
+.menu{
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.front-page {
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.front-page:hover{
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu{
+    height: 40px;
+    width: 40px;
+}
+
+.menu-button{
+    display: none;
+}
+
+.x{
+    margin: 0;
+    margin-top: 30px;
+    height: 40px;
+    width: 40px;
+    margin-left: 160px;
+    background-color: var(--primary-color);
+}
+
+.movies{
+    margin-top: 3vh;
+    text-align: center;
+}
+.movie-list-container {
+    padding: 0 40px;
+    margin-left: 20px;
+}
+
+.movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list {
+    margin-top:10vh;
+    margin-left: 5vh;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+    margin-right: 50px;
+    position: relative;
+    margin-bottom: 10vh;
+}
+  
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: .1;
+}
+  
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+}
+  
+.movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 275px;
+    height: 400px;
+    object-fit:cover;
+    border-radius: 20px;
+}
+  
+.movie-list-item-title {
+    /* background-color: #000000; */
+    color: rgb(153, 34, 34);
+    padding: 0 8px;
+    font-family: "Mohave";
+    font-size: 30px;
+    font-weight:bolder;
+    position: absolute;
+    top: 5%;
+    left: 45px;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    border-radius: 10px;
+    text-align: center;
+}
+  
+.movie-list-item-desc {
+    color:var(--secondary-color);
+    font-family: "Mohave";
+    max-width: 70ch;
+    font-size: 20px;
+    word-spacing: 15%;
+    letter-spacing: 15%;
+    font-weight: bold;
+    position: absolute;
+    top: 28%;
+    left: 40px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    border-radius: 20px;
+}
+  
+@media (max-width:1376px) {
+    .front-page{
+        display:none;
+    }
+    .menu-button{
+        display:block;
+    }
+}
