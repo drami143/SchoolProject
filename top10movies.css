@@ -186,7 +186,25 @@ nav li:first-child{
     object-fit:cover;
     border-radius: 20px;
 }
-  
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
 .movie-list-item-title {
     /* background-color: #000000; */
     color: rgb(153, 34, 34);
@@ -220,11 +238,19 @@ nav li:first-child{
     border-radius: 20px;
 }
   
-@media (max-width:1376px) {
-    .front-page{
-        display:none;
-    }
-    .menu-button{
-        display:block;
+.footer {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
     }
 }
