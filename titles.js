@@ -22,7 +22,7 @@ let getMovie = () => {
                 <div>
                     <h2>${data.Title}</h2>
                     <div class="rating">
-                        <img src="/images/star.png">
+                        <img src="star.png">
                         <h4>${data.imdbRating}</h4>
                     </div>
                     <div class="details">
